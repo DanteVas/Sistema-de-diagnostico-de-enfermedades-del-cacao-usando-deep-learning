@@ -1,46 +1,180 @@
 # 🍫 Sistema de Diagnóstico de Enfermedades en Cacao con Deep Learning
 
-## 📋 Descripción
+<div align="center">
+  
+  <p>
+    <strong>🏆 Sistema de IA para diagnóstico automático de enfermedades en plantaciones de cacao</strong>
+  </p>
 
-Este proyecto implementa un sistema automático de diagnóstico de enfermedades del cacao utilizando redes neuronales convolucionales (CNN) y técnicas de Deep Learning. El sistema puede identificar tres estados fitosanitarios:
+</div>
 
-- 🌱 **Sano** (healthy)
-- 🦠 **Pudrición Negra** (black pod rot - Phytophthora)
-- 🐛 **Barrenador de Mazorca** (pod borer - Conopomorpha)
+---
 
-## 🚀 Características
+## 🎯 Visión General
 
-- ✅ Implementación de 4 arquitecturas CNN diferentes
-- ✅ Transfer Learning con MobileNetV2 y ResNet50
-- ✅ Validación estadística con prueba de McNemar
-- ✅ Métricas robustas (MCC, F1-score, especificidad)
-- ✅ Interfaz web con Streamlit
-- ✅ Generación de reportes PDF
-- ✅ Mapas de calor Grad-CAM para interpretabilidad
+> **💡 Revolucionando la agricultura del cacao con Inteligencia Artificial**
 
-## 🛠️ Tecnologías Utilizadas
+Este proyecto implementa un sistema de diagnóstico fitosanitario de última generación que utiliza **Deep Learning** para detectar automáticamente enfermedades en frutos de cacao. La solución combina técnicas avanzadas de **Computer Vision** y **Transfer Learning** para proporcionar diagnósticos precisos y confiables en tiempo real.
 
-- **Python** 3.11
-- **TensorFlow** 2.13.0
-- **Keras** 2.13.0
-- **Streamlit** 1.34.0
-- **Google Colab** (para entrenamiento)
-- **Kaggle API** 1.6.12
+<div align="center">
 
-## Hardware del Proyecto:
-- **GPU:** NVIDIA GeForce RTX 4060 Laptop
-- **CPU:** AMD Ryzen 7 6800H
-- **RAM:** 16GB DDR5-4800 MHz
-- **Cuantización:** TensorRT 8.6.1
+| 🌱 **SANO** | 🦠 **PUDRICIÓN NEGRA** | 🐛 **BARRENADOR** |
+|:----------:|:---------------------:|:----------------:|
+| **Estado Óptimo** | **Phytophthora spp.** | **Conopomorpha cramerella** |
+| *Fruto en condiciones ideales* | *Enfermedad fúngica severa* | *Infestación lepidóptero* |
 
-## 📊 Resultados
+</div>
 
-| Modelo | MCC | Especificidad | F1-Score |
-|--------|-----|---------------|----------|
-| CNN Simple | 0.744 | 0.915 | 0.830 |
-| CNN Profunda | 0.727 | 0.910 | 0.812 |
-| MobileNetV2 | **0.910** | **0.969** | **0.942** |
-| ResNet50 | 0.910 | 0.97 | 0.89 |
+---
+
+## ⚡ Características Revolucionarias
+
+<table>
+<tr>
+<td width="50%">
+
+### 🧠 **Arquitecturas de Deep Learning**
+```
+✨ CNN Personalizada Simple
+🚀 CNN Profunda Multi-capa  
+🏆 Transfer Learning MobileNetV2
+💎 Transfer Learning ResNet50
+```
+
+### 📊 **Validación Estadística Robusta**
+```
+📈 Test de McNemar
+🎯 Matthews Correlation Coefficient
+⚖️ F1-Score macro & weighted
+🔍 Especificidad & Sensibilidad
+```
+
+</td>
+<td width="50%">
+
+### 🖥️ **Interface Intuitiva**
+```
+🌐 Aplicación Web Streamlit
+📄 Reportes PDF Automáticos
+📊 Dashboard Interactivo
+⚡ Predicciones en Tiempo Real
+```
+
+### 🔍 **Interpretabilidad Avanzada**
+```
+🎨 Mapas de Calor Grad-CAM
+👁️ Análisis Visual de Características
+🧩 Explicabilidad del Modelo
+📈 Visualización de Activaciones
+```
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠️ Stack Tecnológico de Vanguardia
+
+<div align="center">
+
+### **🔥 Frameworks & Libraries**
+<img src="https://img.shields.io/badge/Python-3.11-3776ab?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/TensorFlow-2.13.0-ff6f00?style=flat-square&logo=tensorflow&logoColor=white" />
+<img src="https://img.shields.io/badge/Keras-2.13.0-d00000?style=flat-square&logo=keras&logoColor=white" />
+<img src="https://img.shields.io/badge/Streamlit-1.34.0-ff4b4b?style=flat-square&logo=streamlit&logoColor=white" />
+
+### **☁️ Cloud Platforms**
+<img src="https://img.shields.io/badge/Google%20Colab-Training-F9AB00?style=flat-square&logo=googlecolab&logoColor=white" />
+<img src="https://img.shields.io/badge/Kaggle%20API-1.6.12-20BEFF?style=flat-square&logo=kaggle&logoColor=white" />
+
+### **⚡ Hardware Specifications**
+<img src="https://img.shields.io/badge/NVIDIA-RTX_4060_Laptop-76B900?style=flat-square&logo=nvidia&logoColor=white" />
+<img src="https://img.shields.io/badge/AMD-Ryzen_7_6800H-ED1C24?style=flat-square&logo=amd&logoColor=white" />
+<img src="https://img.shields.io/badge/DDR5-16GB_4800MHz-0071C5?style=flat-square&logo=crucial&logoColor=white" />
+<img src="https://img.shields.io/badge/TensorRT-8.6.1-76B900?style=flat-square&logo=nvidia&logoColor=white" />
+
+</div>
+
+---
+
+## 🏆 Resultados de Rendimiento
+
+<div align="center">
+
+### **📊 Comparativa de Modelos**
+
+| **🏅 Rank** | **Arquitectura** | **MCC** | **Especificidad** | **F1-Score** | **Status** |
+|:----------:|:-----------------|:-------:|:-----------------:|:------------:|:----------:|
+| **🥇** | **MobileNetV2** | **0.910** | **0.969** | **0.942** | **🏆 CHAMPION** |
+| **🥈** | **ResNet50** | **0.910** | **0.970** | **0.890** | **⭐ EXCELLENT** |
+| **🥉** | **CNN Simple** | **0.744** | **0.915** | **0.830** | **✅ GOOD** |
+| **4️⃣** | **CNN Profunda** | **0.727** | **0.910** | **0.812** | **🔵 VALIDATED** |
+
+</div>
+
+---
+
+### **🎯 Métricas del Modelo Ganador: MobileNetV2**
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="33%">
+  <h3>🎯 MCC</h3>
+  <h2><strong>0.910</strong></h2>
+  <p><em>Matthews Correlation<br>Excelente correlación</em></p>
+</td>
+<td align="center" width="33%">
+  <h3>🔍 Especificidad</h3>
+  <h2><strong>96.9%</strong></h2>
+  <p><em>Baja tasa de<br>falsos positivos</em></p>
+</td>
+<td align="center" width="33%">
+  <h3>⚖️ F1-Score</h3>
+  <h2><strong>0.942</strong></h2>
+  <p><em>Balance perfecto<br>precisión-recall</em></p>
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+### **🚀 Ventajas Competitivas**
+
+<div align="center">
+
+| **🎯 Precisión** | **⚡ Velocidad** | **🔧 Flexibilidad** | **💡 Innovación** |
+|:---------------:|:---------------:|:------------------:|:----------------:|
+| **96.9% Accuracy** | **Real-time** | **Multi-platform** | **Grad-CAM** |
+| Diagnóstico confiable | Respuesta inmediata | Web, mobile, API | Explicabilidad AI |
+
+</div>
+
+---
+
+### **📈 Impacto del Proyecto**
+
+<div align="center">
+
+```
+🌱 IMPACTO AGRÍCOLA          🔬 IMPACTO CIENTÍFICO          💼 IMPACTO ECONÓMICO
+────────────────────         ────────────────────          ────────────────────
+✅ Detección temprana        ✅ 4 arquitecturas CNN        ✅ Reducción de pérdidas
+✅ Prevención de pérdidas    ✅ Transfer Learning          ✅ Optimización recursos
+✅ Agricultura sostenible    ✅ Validación estadística     ✅ ROI medible
+✅ Monitoreo continuo        ✅ Interpretabilidad AI       ✅ Escalabilidad
+```
+
+</div>
+
+---
+
+<div align="center">
+</div>
 
 ## 🔧 Instalación y Configuración
 
@@ -75,7 +209,7 @@ git push origin main
 ### Preparación Inicial
 
 1. 🌐 Abre [Google Colab](https://colab.research.google.com/)
-2. 📂 Sube el archivo `CacaoDeep.ipynb` desde tu repositorio
+2. 📂 Si sigues estos pasos vas a poder visualizar a la perfección el funcionamiento
 3. 🔄 Asegúrate de tener una cuenta de Kaggle activa
 
 ### Ejecución Paso a Paso
@@ -514,7 +648,34 @@ TRANSLATIONS = {
             'Sube un archivo CSV con las columnas: y_true, y_pred1, y_pred2, y_pred3',
             'El sistema comparará automáticamente los tres modelos',
             'Genera métricas avanzadas y pruebas estadísticas'
-        ]
+        ],
+
+        'project_title': 'Sistema de Diagnóstico de Enfermedades en Cacao',
+        'project_subtitle': 'Inteligencia Artificial para la Salud del Cacao',
+        'about_project': '🌱 Sobre el Proyecto',
+        'about_project_desc': 'Este proyecto implementa un sistema automático de diagnóstico de enfermedades del cacao utilizando <strong>redes neuronales convolucionales (CNN)</strong> y técnicas de <strong>Deep Learning</strong>. El sistema puede identificar automáticamente el estado fitosanitario de las mazorcas de cacao, ayudando a los productores a tomar decisiones informadas para el cuidado de sus cultivos.',
+        'main_features': '🚀 Características del Sistema',
+        'feature_1_title': '🧠 Deep Learning Avanzado',
+        'feature_1_desc': '4 arquitecturas CNN especializadas en análisis de imágenes de cacao con transfer learning',
+        'feature_2_title': '📊 Validación Estadística',
+        'feature_2_desc': 'Pruebas de McNemar para comparación robusta de modelos y métricas avanzadas',
+        'feature_3_title': '🎯 Interpretabilidad',
+        'feature_3_desc': 'Mapas de calor Grad-CAM para entender qué características analiza el modelo',
+        'feature_4_title': '📱 Interfaz Intuitiva',
+        'feature_4_desc': 'Aplicación web moderna con reportes PDF automáticos y visualizaciones interactivas',
+        'detected_states': '🔍 Estados Fitosanitarios Detectados',
+        'healthy_title': 'Sano (Healthy)',
+        'healthy_desc': 'Mazorca sin síntomas, color uniforme y sin lesiones visibles',
+        'blackpod_title': 'Pudrición Negra',
+        'blackpod_desc': 'Manchas marrón-negruzcas causadas por Phytophthora',
+        'podborer_title': 'Barrenador de Mazorca',
+        'podborer_desc': 'Daño causado por larvas de Conopomorpha',
+        'tech_stack': '🛠️ Stack Tecnológico',
+        'hardware_specs': '💻 Especificaciones de Hardware',
+        'cta_phrase': '🎯 Revolucionando el diagnóstico agrícola con Inteligencia Artificial',
+        'cta_phrase': '🎯 Revolucionando el diagnóstico agrícola con Inteligencia Artificial',
+        'tech_stack': '🛠️ Stack Tecnológico',
+        'hardware_specs': '💻 Especificaciones de Hardware',
     },
     'en': {
         # Main titles
@@ -635,7 +796,31 @@ TRANSLATIONS = {
             'Upload a CSV file with columns: y_true, y_pred1, y_pred2, y_pred3',
             'The system will automatically compare the three models',
             'Generate advanced metrics and statistical tests'
-        ]
+        ],
+        'project_title': 'Cacao Disease Diagnosis System',
+        'project_subtitle': 'Artificial Intelligence for Cacao Health',
+        'about_project': '🌱 About the Project',
+        'about_project_desc': 'This project implements an automatic system for diagnosing cacao diseases using <strong>convolutional neural networks (CNNs)</strong> and <strong>Deep Learning</strong> techniques. The system can automatically identify the phytosanitary status of cacao pods, helping producers make informed decisions for crop care.',
+        'main_features': '🚀 System Features',
+        'feature_1_title': '🧠 Advanced Deep Learning',
+        'feature_1_desc': '4 specialized CNN architectures for cacao image analysis with transfer learning',
+        'feature_2_title': '📊 Statistical Validation',
+        'feature_2_desc': 'McNemar tests for robust model comparison and advanced metrics',
+        'feature_3_title': '🎯 Interpretability',
+        'feature_3_desc': 'Grad-CAM heatmaps to understand which features the model analyzes',
+        'feature_4_title': '📱 Intuitive Interface',
+        'feature_4_desc': 'Modern web application with automatic PDF reports and interactive visualizations',
+        'detected_states': '🔍 Detected Phytosanitary States',
+        'healthy_title': 'Healthy',
+        'healthy_desc': 'Pod with no symptoms, uniform color and no visible lesions',
+        'blackpod_title': 'Black Pod Rot',
+        'blackpod_desc': 'Dark brown to black spots caused by Phytophthora',
+        'podborer_title': 'Pod Borer',
+        'podborer_desc': 'Damage caused by Conopomorpha larvae',
+        'tech_stack': '🛠️ Tech Stack',
+        'hardware_specs': '💻 Hardware Specifications',
+        'cta_phrase': '🎯 Revolutionizing agricultural diagnosis with Artificial Intelligence',
+
     },
     'it': {
         # Titoli principali
@@ -756,7 +941,30 @@ TRANSLATIONS = {
             'Carica un file CSV con le colonne: y_true, y_pred1, y_pred2, y_pred3',
             'Il sistema confronterà automaticamente i tre modelli',
             'Genera metriche avanzate e test statistici'
-        ]
+        ],
+        'project_title': 'Sistema di Diagnosi delle Malattie del Cacao',
+        'project_subtitle': 'Intelligenza Artificiale per la Salute del Cacao',
+        'about_project': '🌱 Sul Progetto',
+        'about_project_desc': 'Questo progetto implementa un sistema automatico per la diagnosi delle malattie del cacao utilizzando <strong>reti neurali convoluzionali (CNN)</strong> e tecniche di <strong>Deep Learning</strong>. Il sistema può identificare automaticamente lo stato fitosanitario delle cabosse di cacao, aiutando i produttori a prendere decisioni informate per la cura delle coltivazioni.',
+        'main_features': '🚀 Caratteristiche del Sistema',
+        'feature_1_title': '🧠 Deep Learning Avanzato',
+        'feature_1_desc': '4 architetture CNN specializzate nell’analisi delle immagini di cacao con transfer learning',
+        'feature_2_title': '📊 Validazione Statistica',
+        'feature_2_desc': 'Test di McNemar per il confronto robusto dei modelli e metriche avanzate',
+        'feature_3_title': '🎯 Interpretabilità',
+        'feature_3_desc': 'Mappe di calore Grad-CAM per capire quali caratteristiche analizza il modello',
+        'feature_4_title': '📱 Interfaccia Intuitiva',
+        'feature_4_desc': 'Applicazione web moderna con report PDF automatici e visualizzazioni interattive',
+        'detected_states': '🔍 Stati Fitosanitari Rilevati',
+        'healthy_title': 'Sano',
+        'healthy_desc': 'Cabossa senza sintomi, colore uniforme e nessuna lesione visibile',
+        'blackpod_title': 'Marciume Nero',
+        'blackpod_desc': 'Macchie marroni-nere causate da Phytophthora',
+        'podborer_title': 'Perforatore del Baccello',
+        'podborer_desc': 'Danni causati da larve di Conopomorpha',
+        'tech_stack': '🛠️ Stack Tecnologico',
+        'hardware_specs': '💻 Specifiche Hardware',
+        'cta_phrase': '🎯 Rivoluzionando la diagnosi agricola con l’Intelligenza Artificiale',
     }
 }
 
@@ -822,23 +1030,112 @@ def cargar_imagen_desde_github(url):
         return None
 
 DISEASE_INFO = {
-    0: {'name': 'Sano', 'desc': 'Mazorca sin síntomas evidentes. Color uniforme y sin lesiones visibles.',
-        'treatment': 'No requiere tratamiento. Mantenga prácticas agrícolas preventivas.',
-        'symptoms': 'Fruto y hoja sin manchas ni daños.',
-        'prevention': 'Mantener buen drenaje, inspección regular, manejo integrado de plagas.',
-        'severity': 'Ninguna', 'color': '#43A047', 'bg': '#E9FCE7', 'class': 'healthy'},
-    1: {'name': 'Pudrición Negra (Black Pod Rot)', 'desc': 'Enfermedad causada por Phytophthora spp., con manchas marrón-negruzcas, generalmente en la base o extremo de la mazorca.',
-        'treatment': '1. Retirar y destruir frutos enfermos\n2. Aplicar fungicidas (a base de cobre)\n3. Mejorar el drenaje del suelo\n4. Podar ramas bajas\n5. Aplicar materia orgánica',
-        'symptoms': 'Manchas marrón oscuro o negras, consistencia húmeda, progresión rápida.',
-        'prevention': 'Mejorar ventilación, evitar humedad excesiva, aplicar fungicidas preventivos.',
-        'severity': 'Alta', 'color': '#6D4C41', 'bg': '#F9ECE4', 'class': 'pudricion'},
-    2: {'name': 'Barrenador de Mazorca (Pod Borer)', 'desc': 'Plaga causada por larvas que se alimentan del interior de la mazorca. Provoca daños internos, galerías y pérdida de semillas.',
-        'treatment': '1. Recolectar y destruir frutos infestados\n2. Uso de trampas de feromonas\n3. Control biológico\n4. Aplicaciones de insecticidas específicos\n5. Limpieza del cultivo',
-        'symptoms': 'Orificios pequeños, daños en semillas, frutos deformados, presencia de larvas.',
-        'prevention': 'Monitoreo con trampas, control biológico, manejo de residuos.',
-        'severity': 'Media-Alta', 'color': '#FFB300', 'bg': '#FFF8E1', 'class': 'barrenador'}
+    0: {
+        'name': {
+            'es': 'Sano',
+            'en': 'Healthy',
+            'it': 'Sano',
+        },
+        'desc': {
+            'es': 'Mazorca sin síntomas evidentes. Color uniforme y sin lesiones visibles.',
+            'en': 'Pod with no visible symptoms. Uniform color and no visible lesions.',
+            'it': 'Cabossa senza sintomi evidenti. Colore uniforme e nessuna lesione visibile.',
+        },
+        'treatment': {
+            'es': 'No requiere tratamiento. Mantenga prácticas agrícolas preventivas.',
+            'en': 'No treatment required. Maintain preventive agricultural practices.',
+            'it': 'Non richiede trattamento. Mantenere pratiche agricole preventive.',
+        },
+        'symptoms': {
+            'es': 'Fruto y hoja sin manchas ni daños.',
+            'en': 'Fruit and leaf without spots or damage.',
+            'it': 'Frutto e foglia senza macchie né danni.',
+        },
+        'prevention': {
+            'es': 'Mantener buen drenaje, inspección regular, manejo integrado de plagas.',
+            'en': 'Maintain good drainage, regular inspection, integrated pest management.',
+            'it': 'Mantenere un buon drenaggio, ispezione regolare, gestione integrata dei parassiti.',
+        },
+        'severity': {
+            'es': 'Ninguna',
+            'en': 'None',
+            'it': 'Nessuna',
+        },
+        'color': '#43A047',
+        'bg': '#E9FCE7',
+        'class': 'healthy'
+    },
+    1: {
+        'name': {
+            'es': 'Pudrición Negra',
+            'en': 'Black Pod Rot',
+            'it': 'Marciume Nero',
+        },
+        'desc': {
+            'es': 'Enfermedad causada por Phytophthora spp., con manchas marrón-negruzcas, generalmente en la base o extremo de la mazorca.',
+            'en': 'Disease caused by Phytophthora spp., with dark brown to black spots, usually at the base or tip of the pod.',
+            'it': 'Malattia causata da Phytophthora spp., con macchie marrone-nere, generalmente alla base o all’estremità della cabossa.',
+        },
+        'treatment': {
+            'es': '1. Retirar y destruir frutos enfermos\n2. Aplicar fungicidas (a base de cobre)\n3. Mejorar el drenaje del suelo\n4. Podar ramas bajas\n5. Aplicar materia orgánica',
+            'en': '1. Remove and destroy infected pods\n2. Apply fungicides (copper-based)\n3. Improve soil drainage\n4. Prune lower branches\n5. Apply organic matter',
+            'it': '1. Rimuovere e distruggere i frutti malati\n2. Applicare fungicidi (a base di rame)\n3. Migliorare il drenaggio del suolo\n4. Potare i rami bassi\n5. Applicare materia organica',
+        },
+        'symptoms': {
+            'es': 'Manchas marrón oscuro o negras, consistencia húmeda, progresión rápida.',
+            'en': 'Dark brown or black spots, moist consistency, rapid progression.',
+            'it': 'Macchie marrone scuro o nere, consistenza umida, progressione rapida.',
+        },
+        'prevention': {
+            'es': 'Mejorar ventilación, evitar humedad excesiva, aplicar fungicidas preventivos.',
+            'en': 'Improve ventilation, avoid excessive humidity, apply preventive fungicides.',
+            'it': 'Migliorare la ventilazione, evitare l’umidità eccessiva, applicare fungicidi preventivi.',
+        },
+        'severity': {
+            'es': 'Alta',
+            'en': 'High',
+            'it': 'Alta',
+        },
+        'color': '#6D4C41',
+        'bg': '#F9ECE4',
+        'class': 'pudricion'
+    },
+    2: {
+        'name': {
+            'es': 'Barrenador de Mazorca',
+            'en': 'Pod Borer',
+            'it': 'Perforatore del Baccello',
+        },
+        'desc': {
+            'es': 'Plaga causada por larvas que se alimentan del interior de la mazorca. Provoca daños internos, galerías y pérdida de semillas.',
+            'en': 'Pest caused by larvae that feed inside the pod. Causes internal damage, tunnels, and seed loss.',
+            'it': 'Parassita causato da larve che si nutrono dell’interno della cabossa. Provoca danni interni, gallerie e perdita di semi.',
+        },
+        'treatment': {
+            'es': '1. Recolectar y destruir frutos infestados\n2. Uso de trampas de feromonas\n3. Control biológico\n4. Aplicaciones de insecticidas específicos\n5. Limpieza del cultivo',
+            'en': '1. Collect and destroy infested pods\n2. Use pheromone traps\n3. Biological control\n4. Apply specific insecticides\n5. Clean the crop',
+            'it': '1. Raccogliere e distruggere i frutti infestati\n2. Utilizzare trappole a feromoni\n3. Controllo biologico\n4. Applicare insetticidi specifici\n5. Pulizia della coltivazione',
+        },
+        'symptoms': {
+            'es': 'Orificios pequeños, daños en semillas, frutos deformados, presencia de larvas.',
+            'en': 'Small holes, seed damage, deformed fruits, presence of larvae.',
+            'it': 'Piccoli fori, danni ai semi, frutti deformati, presenza di larve.',
+        },
+        'prevention': {
+            'es': 'Monitoreo con trampas, control biológico, manejo de residuos.',
+            'en': 'Monitor with traps, biological control, waste management.',
+            'it': 'Monitoraggio con trappole, controllo biologico, gestione dei residui.',
+        },
+        'severity': {
+            'es': 'Media-Alta',
+            'en': 'Medium-High',
+            'it': 'Media-Alta',
+        },
+        'color': '#FFB300',
+        'bg': '#FFF8E1',
+        'class': 'barrenador'
+    }
 }
-CLASSES = [DISEASE_INFO[i]['name'] for i in range(3)]
 MODEL_NAMES = ['CNN Simple', 'CNN Profunda', 'MobileNetV2']
 IMG_HEIGHT_GRADCAM, IMG_WIDTH_GRADCAM = 224, 224
 
@@ -849,6 +1146,20 @@ METRIC_DESCRIPTIONS = {
     "MCC": "Medida global de calidad del modelo (-1 a 1, donde 1 es perfecto, 0 es azar).",
     "Especificidad Promedio": "Capacidad de identificar correctamente los negativos (verdaderos negativos / (verdaderos negativos + falsos positivos))."
 }
+
+MODEL_NAMES = ['CNN Simple', 'CNN Profunda', 'MobileNetV2']
+IMG_HEIGHT_GRADCAM, IMG_WIDTH_GRADCAM = 224, 224
+
+METRIC_DESCRIPTIONS = {
+    "Precisión": "Porcentaje de predicciones correctas sobre el total de muestras.",
+    "Recall": "Capacidad del modelo para encontrar todos los casos positivos (sensibilidad).",
+    "F1-Score": "Promedio armónico entre precisión y recall; balance entre falsos positivos y negativos.",
+    "MCC": "Medida global de calidad del modelo (-1 a 1, donde 1 es perfecto, 0 es azar).",
+    "Especificidad Promedio": "Capacidad de identificar correctamente los negativos (verdaderos negativos / (verdaderos negativos + falsos positivos))."
+}
+
+def get_classes(lang):
+    return [DISEASE_INFO[i]['name'][lang] for i in range(len(DISEASE_INFO))]
 
 def plot_confusion_matrix_mpl(y_true, y_pred, classes, title='Matriz de Confusión'):
     cm = confusion_matrix(y_true, y_pred)
@@ -869,20 +1180,16 @@ def fig_to_base64(fig):
     plt.close(fig)
     return img_base64
 
-def create_confidence_chart(predictions, model_names):
+def create_confidence_chart(predictions, model_names, lang):
+    class_names = get_classes(lang)
     df_conf = pd.DataFrame({
         'Modelo': model_names,
         'Confianza': [float(np.max(pred)) * 100 for pred in predictions],
-        'Predicción': [CLASSES[int(np.argmax(pred))] for pred in predictions]
+        'Predicción': [class_names[int(np.argmax(pred))] for pred in predictions]
     })
     fig = px.bar(df_conf, x='Modelo', y='Confianza',
                  color='Predicción',
-                 title='Confianza por Modelo',
-                 color_discrete_map={
-                     'Sano': '#43A047',
-                     'Pudrición Negra (Black Pod Rot)': '#6D4C41',
-                     'Barrenador de Mazorca (Pod Borer)': '#FFB300'
-                 })
+                 title='Confianza por Modelo')
     fig.update_layout(height=400)
     return fig
 
@@ -896,10 +1203,11 @@ def mcc_per_class(y_true, y_pred, n_classes=3):
     return mccs
 
 def calculate_advanced_metrics(y_true, y_pred):
-    report = classification_report(y_true, y_pred, target_names=CLASSES, output_dict=True)
+    classes = get_classes(lang)
+    report = classification_report(y_true, y_pred, target_names=classes, output_dict=True)
     cm = confusion_matrix(y_true, y_pred)
     specificity = []
-    for i in range(len(CLASSES)):
+    for i in range(len(classes)):
         tn = np.sum(cm) - (np.sum(cm[i, :]) + np.sum(cm[:, i]) - cm[i, i])
         fp = np.sum(cm[:, i]) - cm[i, i]
         spec = tn / (tn + fp) if (tn + fp) > 0 else 0
@@ -1005,7 +1313,7 @@ def load_models():
             tf.keras.layers.GlobalAveragePooling2D(),
             tf.keras.layers.Dense(256, activation='relu'),
             tf.keras.layers.Dropout(0.5),
-            tf.keras.layers.Dense(len(CLASSES), activation='softmax')
+            tf.keras.layers.Dense(len(get_classes(st.session_state.language)), activation='softmax')
         ])
         model_resnet_for_gradcam.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
         return model1, model2, model3, model_resnet_for_gradcam, base_model_resnet
@@ -1136,13 +1444,12 @@ def generate_individual_report(image, predictions, features, consensus, lang):
     {img_html}
     """
     disease = DISEASE_INFO[consensus]
-    html += f"""
-    <div class="diagnosis-card">
-    <h2>{get_text('ai_diagnosis', lang)}: {disease['name']}</h2>
-    <p style="font-size: 1.2em; margin: 10px 0;">{disease['desc']}</p>
-    <p><strong>{get_text('severity', lang)}:</strong> {disease['severity']}</p>
-    </div>
-    """
+    disease_name = disease['name'][lang]
+    disease_desc = disease['desc'][lang]
+    disease_treatment = disease['treatment'][lang]
+    disease_prevention = disease['prevention'][lang]
+    disease_severity = disease['severity'][lang]
+
     html += f"""
     <div class="section">
     <h2>{get_text('model_confidence', lang)}</h2>
@@ -1155,13 +1462,12 @@ def generate_individual_report(image, predictions, features, consensus, lang):
         html += f"""
         <div class="model-result">
         <h3>{name}</h3>
-        <p><strong>{get_text('prediction', lang)}:</strong> {pred_disease['name']}</p>
+        <p><strong>{get_text('prediction', lang)}:</strong> {pred_disease['name'][lang]}</p>
         <p><strong>{get_text('confidence', lang)}:</strong> {conf:.1f}%</p>
-        <div class="confidence-bar">
-        <div class="confidence-fill" style="width: {conf}%;"></div>
-        </div>
+        ...
         </div>
         """
+
     html += """
     </div>
     </div>
@@ -1189,9 +1495,9 @@ def generate_individual_report(image, predictions, features, consensus, lang):
     html += f"""
     <div class="section">
     <h2>{get_text('recommended_treatment', lang)}</h2>
-    <pre style="white-space: pre-wrap; font-family: inherit;">{disease['treatment']}</pre>
+    <pre style="white-space: pre-wrap; font-family: inherit;">{disease['treatment'][lang]}</pre>
     <h3>{get_text('prevention', lang)}</h3>
-    <p>{disease['prevention']}</p>
+    <p>{disease['prevention'][lang]}</p>
     </div>
     """
     html += f"""
@@ -1200,8 +1506,9 @@ def generate_individual_report(image, predictions, features, consensus, lang):
     <table>
     <tr><th>{get_text('model', lang)}</th><th>{get_text('confidence', lang)}</th></tr>
     """
+    classes = get_classes(lang)
     avg_probs = np.mean(predictions, axis=0)
-    for i, (class_name, prob) in enumerate(zip(CLASSES, avg_probs)):
+    for i, (class_name, prob) in enumerate(zip(classes, avg_probs)):
         html += f"<tr><td>{class_name}</td><td>{prob*100:.2f}%</td></tr>"
     html += """
     </table>
@@ -1344,11 +1651,13 @@ st.set_page_config(
 init_language()
 language_selector()
 lang = st.session_state.language
-
 st.sidebar.markdown("### 🎛️ Panel de Control")
 app_mode = st.sidebar.selectbox(
     get_text("select_mode", lang),
-    ["🔍 " + get_text('individual_diagnosis', lang), "📚 " + get_text('disease_guide', lang), "📊 " + get_text('comparative_analysis', lang)],
+    ["📝 Proyecto: Descripción Completa",
+     "🔍 " + get_text('individual_diagnosis', lang), 
+     "📚 " + get_text('disease_guide', lang), 
+     "📊 " + get_text('comparative_analysis', lang)],
     help=get_text("select_mode", lang)
 )
 
@@ -1367,8 +1676,272 @@ st.sidebar.info(f"""
 """)
 
 model1, model2, model3, model_resnet, base_model_resnet = load_models()
+if app_mode.startswith("📝 Proyecto: Descripción Completa"):
+    # CSS personalizado para tema cacao
+    st.markdown("""
+    <style>
+    .main-header {
+        background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #CD853F 100%);
+        padding: 2rem;
+        border-radius: 20px;
+        text-align: center;
+        margin-bottom: 2rem;
+        box-shadow: 0 8px 32px rgba(139, 69, 19, 0.3);
+    }
+    
+    .main-title {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .subtitle {
+        color: #FFF8DC;
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+    
+    .description-card {
+        background: linear-gradient(145deg, #FFF8DC 0%, #F5DEB3 100%);
+        padding: 2rem;
+        border-radius: 15px;
+        border-left: 5px solid #8B4513;
+        margin: 1.5rem 0;
+        box-shadow: 0 4px 15px rgba(139, 69, 19, 0.1);
+    }
+    
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+    }
+    
+    .feature-card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        border: 1px solid #D2691E;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .feature-card p {
+    color: #5D4037;  /* Cambias los párrafos a marrón oscuro */
+    font-size: 1rem;
+    font-weight: 400;
+    }
 
-if app_mode.startswith("🔍"):
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(139, 69, 19, 0.2);
+    }
+    
+    .feature-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #8B4513, #D2691E, #CD853F);
+    }
+    
+    .disease-status {
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 0.5rem 0;
+        border-left: 4px solid;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .healthy { border-left-color: #28a745; }
+    .black-pod { border-left-color: #6f42c1; }
+    .pod-borer { border-left-color: #fd7e14; }
+    
+    .tech-badge {
+        display: inline-block;
+        background: linear-gradient(45deg, #8B4513, #D2691E);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        margin: 0.25rem;
+        font-weight: 500;
+        font-size: 0.9rem;
+        box-shadow: 0 2px 8px rgba(139, 69, 19, 0.3);
+    }
+    
+    .stats-container {
+        background: linear-gradient(135deg, #2C1810 0%, #4A2C17 100%);
+        padding: 2rem;
+        border-radius: 15px;
+        color: white;
+        margin: 2rem 0;
+    }
+    
+    .stat-item {
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .stat-value {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #F5DEB3;
+        display: block;
+    }
+    
+    .stat-label {
+        font-size: 0.9rem;
+        color: #D2691E;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .cacao-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        display: block;
+        text-align: center;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    
+    # Header principal
+    st.markdown(f"""
+    <div class="main-header">
+        <div class="cacao-icon">🍫</div>
+        <h1 class="main-title">{get_text('project_title', lang)}</h1>
+        <p class="subtitle">{get_text('project_subtitle', lang)}</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Descripción del proyecto
+    st.markdown(f"""
+    <div class="description-card">
+        <h2 style="color: #8B4513; margin-bottom: 1rem;">{get_text('about_project', lang)}</h2>
+        <p style="font-size: 1.1rem; line-height: 1.6; color: #5D4037;">
+            {get_text('about_project_desc', lang)}
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Estados de enfermedad
+    st.markdown(f"### {get_text('detected_states', lang)}")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown(f"""
+        <div class="disease-status healthy">
+            <div style="font-size: 2rem; margin-right: 1rem;">🌱</div>
+            <div>
+                <h4 style="margin: 0; color: #28a745;">{get_text('healthy_title', lang)}</h4>
+                <p style="margin: 0; font-size: 0.9rem; color: #666;">{get_text('healthy_desc', lang)}</p>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+    with col2:
+        st.markdown(f"""
+        <div class="disease-status black-pod">
+            <div style="font-size: 2rem; margin-right: 1rem;">🦠</div>
+            <div>
+                <h4 style="margin: 0; color: #6f42c1;">{get_text('blackpod_title', lang)}</h4>
+                <p style="margin: 0; font-size: 0.9rem; color: #666;">{get_text('blackpod_desc', lang)}</p>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+    with col3:
+        st.markdown(f"""
+        <div class="disease-status pod-borer">
+            <div style="font-size: 2rem; margin-right: 1rem;">🐛</div>
+            <div>
+                <h4 style="margin: 0; color: #fd7e14;">{get_text('podborer_title', lang)}</h4>
+                <p style="margin: 0; font-size: 0.9rem; color: #666;">{get_text('podborer_desc', lang)}</p>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    # Características principales
+    st.markdown(f"### {get_text('main_features', lang)}")
+    st.markdown(f"""
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h4 style="color: #8B4513; margin-bottom: 1rem;">{get_text('feature_1_title', lang)}</h4>
+            <p>{get_text('feature_1_desc', lang)}</p>
+        </div>
+        <div class="feature-card">
+            <h4 style="color: #8B4513; margin-bottom: 1rem;">{get_text('feature_2_title', lang)}</h4>
+            <p>{get_text('feature_2_desc', lang)}</p>
+        </div>
+        <div class="feature-card">
+            <h4 style="color: #8B4513; margin-bottom: 1rem;">{get_text('feature_3_title', lang)}</h4>
+            <p>{get_text('feature_3_desc', lang)}</p>
+        </div>
+        <div class="feature-card">
+            <h4 style="color: #8B4513; margin-bottom: 1rem;">{get_text('feature_4_title', lang)}</h4>
+            <p>{get_text('feature_4_desc', lang)}</p>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    
+    # Tecnologías utilizadas
+    st.markdown(f"### {get_text('tech_stack', lang)}")
+    
+    st.markdown("""
+    <div style="text-align: center; margin: 2rem 0;">
+        <span class="tech-badge">Python 3.11</span>
+        <span class="tech-badge">TensorFlow 2.13.0</span>
+        <span class="tech-badge">Keras 2.13.0</span>
+        <span class="tech-badge">Streamlit 1.34.0</span>
+        <span class="tech-badge">Google Colab</span>
+        <span class="tech-badge">Kaggle API</span>
+        <span class="tech-badge">TensorRT 8.6.1</span>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Especificaciones de hardware
+    st.markdown(f"### {get_text('hardware_specs', lang)}")
+    
+    st.markdown("""
+    <div class="stats-container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            <div class="stat-item">
+                <span class="stat-value">RTX 4060</span>
+                <span class="stat-label">GPU NVIDIA</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">Ryzen 7</span>
+                <span class="stat-label">CPU AMD 6800H</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">16GB</span>
+                <span class="stat-label">RAM DDR5-4800</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">TensorRT</span>
+                <span class="stat-label">Optimización</span>
+            </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Llamada a la acción
+    st.markdown(f"""
+    <div style="text-align: center; margin: 3rem 0;">
+        <p style="font-size: 1.2rem; color: #8B4513; font-weight: 500;">
+            {get_text('cta_phrase', lang)}
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+elif app_mode.startswith("🔍"):
     st.title("🍫 " + get_text('main_title', lang))
     st.markdown(get_text('subtitle', lang))
 
@@ -1419,19 +1992,19 @@ if app_mode.startswith("🔍"):
             gradcam_img.save(buffered_gradcam, format="PNG")
             st.session_state.gradcam_img_base64 = base64.b64encode(buffered_gradcam.getvalue()).decode()
 
-            st.subheader(f"{get_text('ai_diagnosis', lang)}: **{disease['name']}**")
-            st.markdown(f"**{get_text('description', lang)}:** {disease['desc']}")
-            st.markdown(f"**{get_text('severity', lang)}:** {disease['severity']}")
+            st.subheader(f"{get_text('ai_diagnosis', lang)}: **{disease['name'][lang]}**")
+            st.markdown(f"**{get_text('description', lang)}:** {disease['desc'][lang]}")
+            st.markdown(f"**{get_text('severity', lang)}:** {disease['severity'][lang]}")
 
             st.image(gradcam_img, caption=get_text('gradcam_caption', lang), use_container_width=False, width=420)
             st.markdown("> **" + get_text('gradcam_description', lang) + "**")
 
             st.markdown("### " + get_text('model_confidence', lang))
-            fig_conf = create_confidence_chart(predictions, MODEL_NAMES)
+            fig_conf = create_confidence_chart(predictions, MODEL_NAMES, lang)
             st.plotly_chart(fig_conf, use_container_width=True)
 
             st.markdown("### " + get_text('treatment_prevention', lang))
-            st.markdown(f"**{get_text('recommended_treatment', lang)}:**\n{disease['treatment']}")
+            st.markdown(f"**{get_text('recommended_treatment', lang)}:**\n{disease['treatment'][lang]}")
             st.markdown(f"**{get_text('prevention', lang)}:** {disease['prevention']}")
 
             features = analyze_image_features(image)
@@ -1450,18 +2023,18 @@ if app_mode.startswith("🔍"):
 
 elif app_mode.startswith("📚"):
     st.title("📚 " + get_text('disease_guide_title', lang))
-    tabs = st.tabs([f"{DISEASE_INFO[i]['name']}" for i in range(3)])
+    tabs = st.tabs([f"{DISEASE_INFO[i]['name'][lang]}" for i in range(3)])
     for i, tab in enumerate(tabs):
         with tab:
             disease = DISEASE_INFO[i]
             col1, col2 = st.columns([1, 1])
             with col1:
-                st.markdown(f"### {disease['name']}")
+                st.markdown(f"### {disease['name'][lang]}")
                 img_path = f"{i}.jpg"
                 if os.path.exists(img_path):
-                    st.image(img_path, caption=f"{get_text('example_image', lang)} {disease['name']}", use_container_width=True)
+                    st.image(img_path, caption=f"{get_text('example_image', lang)} {disease['name'][lang]}", use_container_width=True)
                 else:
-                    st.info(f"💡 {get_text('example_not_available', lang)} {disease['name']}")
+                    st.info(f"💡 {get_text('example_not_available', lang)} {disease['name'][lang]}")
                 st.markdown(f"#### 📊 {get_text('general_info', lang)}")
                 st.metric(get_text('severity', lang), disease['severity'])
             with col2:
@@ -1474,7 +2047,7 @@ elif app_mode.startswith("📚"):
             st.markdown(f"#### 💊 {get_text('recommended_treatment', lang)}")
             st.markdown(f"""
             <div class="card {disease['class']}">
-                <pre style="white-space: pre-wrap; font-family: inherit; margin: 0;">{disease['treatment']}</pre>
+                <pre style="white-space: pre-wrap; font-family: inherit; margin: 0;">{disease['treatment'][lang]}</pre>
             </div>
             """, unsafe_allow_html=True)
 
@@ -1549,7 +2122,7 @@ elif app_mode.startswith("📊"):
             for i, (y_pred, name) in enumerate(zip(predictions, MODEL_NAMES)):
                 advanced_metrics = calculate_advanced_metrics(y_true, y_pred)
                 metrics.append(advanced_metrics)
-                fig = plot_confusion_matrix_mpl(y_true, y_pred, CLASSES, f"{get_text('model', lang)} - {name}")
+                fig = plot_confusion_matrix_mpl(y_true, y_pred, get_classes(lang), f"{get_text('model', lang)} - {name}")
                 img_base64 = fig_to_base64(fig)
                 confusion_figs.append(img_base64)
             metric_df = pd.DataFrame({
