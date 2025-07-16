@@ -7,6 +7,28 @@ Original file is located at
     https://colab.research.google.com/drive/1JZFPpo1ibOhqWbFcq3-YiskaVXBJijA4
 """
 
+import gdown
+
+# Descargar todos los modelos
+files = [
+    {"id": "12FpoIHVoyeyDgHj3OAUI-w8WJNaI4FCr", "output": "cnn_simple.h5"},
+    {"id": "1ifVaTaQlORknSg8QGAbNdhHd8bwwC2Id", "output": "cnn_deep.h5"},
+    {"id": "1IVr7__VudaMOfiq6zpO8q2lbT0Oushbn", "output": "mobilenet.h5"},
+    {"id": "1ZjbotPumPJxp0xfQTzx024SA7Kq2sfQQ", "output": "resnet50.h5"},
+]
+for file in files:
+    if not os.path.exists(file["output"]):
+        gdown.download(id=file["id"], output=file["output"], quiet=False)
+    else:
+        print(f"{file['output']} ya existe.")
+
+# Ahora carga los modelos
+from tensorflow.keras.models import load_model
+model1 = load_model('cnn_simple.h5')
+model2 = load_model('cnn_deep.h5')
+model3 = load_model('mobilenet.h5')
+model_resnet = load_model('resnet50.h5')
+
 import streamlit as st
 import numpy as np
 import pandas as pd
