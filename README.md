@@ -2035,20 +2035,25 @@ elif app_mode.startswith("📚"):
             col1, col2 = st.columns([1, 1])
             with col1:
                 st.markdown(f"### {disease['name'][lang]}")
-                img_path = f"{i}.jpg"
-                if os.path.exists(img_path):
-                    st.image(img_path, caption=f"{get_text('example_image', lang)} {disease['name'][lang]}", use_container_width=True)
-                else:
-                    st.info(f"💡 {get_text('example_not_available', lang)} {disease['name'][lang]}")
-                st.markdown(f"#### 📊 {get_text('general_info', lang)}")
-                st.metric(get_text('severity', lang), disease['severity'])
+                # Generar URL de imagen RAW de GitHub
+                github_img_url = f"https://raw.githubusercontent.com/{GITHUB_USER}/{GITHUB_REPO}/main/{i}.jpg"
+                try:
+                    img_request = requests.get(github_img_url)
+                    if img_request.status_code == 200:
+                        image_bytes = BytesIO(img_request.content)
+                        st.image(image_bytes, caption=f"{get_text('example_image', lang)} {disease['name'][lang]}", use_container_width=True)
+                    else:
+                        st.info(f"💡 {get_text('example_not_available', lang)} {disease['name'][lang]}")
+                except Exception as e:
+                    st.info(f"📊 {get_text('example_not_available', lang)} {disease['name'][lang]}")
+
             with col2:
                 st.markdown(f"#### 📝 {get_text('description', lang)}")
-                st.write(disease['desc'])
+                st.write(disease['desc'][lang])
                 st.markdown(f"#### 🔍 {get_text('symptoms', lang)}")
-                st.write(disease['symptoms'])
+                st.write(disease['symptoms'][lang])
                 st.markdown(f"#### 🛡️ {get_text('preventive_measures', lang)}")
-                st.write(disease['prevention'])
+                st.write(disease['prevention'][lang])
             st.markdown(f"#### 💊 {get_text('recommended_treatment', lang)}")
             st.markdown(f"""
             <div class="card {disease['class']}">
@@ -2226,7 +2231,6 @@ cacao-disease-detection/
 ├── 🤖 mobilenet.h5             # Modelo MobileNetV2
 ├── 🤖 resnet50.h5              # Modelo ResNet50
 ├── 📊 requirements.txt         # Dependencias
-└── 📁 cacao_data/              # Dataset descargado
 ```
 
 ## 🎯 Uso de la Aplicación
