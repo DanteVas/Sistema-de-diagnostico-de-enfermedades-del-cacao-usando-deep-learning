@@ -177,6 +177,11 @@ Este proyecto implementa un sistema de diagnóstico fitosanitario de última gen
 </div>
 
 ## 🔧 Instalación y Configuración
+### Solo si quieren revisar el funcionamiento dela app web
+
+1. Si solo se quiere ver el funcionamiento de la app web descarga app.py y ejecuta el codigo en google
+   colab ya no va a entrenar porque los archivos entrenados ya estan subidos en una carpeta de google drive
+   (no se suben los archivos entrenados en este repositorio porque su peso es mucho), automaticamente se descargan para que pueda funcionar la web.
 
 ### Paso 1: Crear Repositorio en GitHub
 
