@@ -358,7 +358,7 @@ resnet50.save('resnet50.h5') # Guardar el nuevo modelo
 
 ---
 
-#### 🖥️ **Celda 10: Creación de la Aplicación Web**
+#### 🖥️ **Celda 10: Creación de la Aplicación Web Multiidioma**
 ```python
 %%writefile app.py
 import streamlit as st
